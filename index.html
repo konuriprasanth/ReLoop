@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verstappen's Lawn Mowing Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 50px;
+            text-align: center;
+            max-width: 600px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .tagline {
+            color: #27ae60;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .address {
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .redirect-message {
+            color: #3498db;
+            font-size: 1.1em;
+            margin-top: 30px;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 10px;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            margin: 20px auto;
+            border: 4px solid #ecf0f1;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .services {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .services h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .services ul {
+            list-style: none;
+            color: #555;
+        }
+        
+        .services li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .services li:before {
+            content: "🏎️";
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏎️</div>
+        <h1>Verstappen's Lawn Mowing</h1>
+        <p class="tagline">"Faster Than a Pit Stop!"</p>
+        
+        <div class="address">
+            <strong>📍 Address:</strong><br>
+            33 Circuit Lane<br>
+            Monaco, MC 98000<br>
+            <br>
+            <strong>📞 Phone:</strong> 1-800-MAX-LAWN<br>
+            <strong>✉️ Email:</strong> max@verstappenlawns.com
+        </div>
+        
+        <div class="services">
+            <h3>Our Premium Services:</h3>
+            <ul>
+                <li>Formula 1 Speed Mowing</li>
+                <li>Championship Edge Trimming</li>
+                <li>Pole Position Landscaping</li>
+                <li>Podium-Worthy Results Guaranteed</li>
+            </ul>
+        </div>
+        
+        <div class="redirect-message">
+            <div class="spinner"></div>
+            <p>Redirecting to our latest promotion...</p>
+        </div>
+    </div>
+    
+    <script>
+        // Redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'https://www.instagram.com/p/DQV0uqTD2hw/';
+        }, 3000);
+    </script>
+</body>
+</html>
